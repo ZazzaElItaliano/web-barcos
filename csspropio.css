@@ -1,0 +1,52 @@
+
+body{
+    background-color: rgb(190, 165, 128);
+}
+header{
+    background-color:rgb(38, 40, 40); 
+     
+}
+
+h1{
+
+    padding-top: 140px;
+
+   
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 340px 340px 340px ;
+    grid-template-rows: auto;
+    gap: 50px;
+    padding-top: 80px;
+    padding-left: 400px;
+    
+}
+.elementos{
+    border: 15px solid #b8c1bf;
+}
+.elementos1{
+    
+    position: relative; 
+    left: 170px;
+    border: 15px solid #b8c1bf;
+ 
+}
+
+.custom-btn {
+    
+   padding-top: 10px;
+   position: relative; 
+    left: 125px;
+   
+  }
+
+.custom-btn1{
+    padding-top: 10px;
+   position: relative; 
+    left: 250px;
+}
+
+
