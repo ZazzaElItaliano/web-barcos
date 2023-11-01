@@ -50,12 +50,12 @@
       <div class="contenedor">
         <div class="elemento">
           <div class="elementos"><img src="barco1.jpg" alt="logo" width="310" height="300"></div>
-          <button type="button" class="btn btn-warning d-block mx-auto mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" class="btn btn-warning d-block mx-auto mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">
             La gran batalla de Guadalcanal
           </button>
 
          
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -88,12 +88,12 @@ de los barcos que participaron en la batalla de Guadalcanal.</h1>
         </div>
         <div class="elemento">
         <div class="elementos"><img src="barcos2.jpg" alt="logo" width="310" height="300"></div>
-          <button type="button" class="btn btn-primary d-block mx-auto mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" class="btn btn-primary d-block mx-auto mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">
             Launch demo modal
           </button>
 
          
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -108,8 +108,8 @@ de los barcos que participaron en la batalla de Guadalcanal.</h1>
                           echo "Lo siento esta consulta esta vacía";
                         }
                         else{
-                        foreach ($resultados_array as $resultado) {
-                            echo "<li> Nombre del barco:{$resultado['NOMBRE_BARCO']}, Desplazamiento: {$resultado['DESPLAZAMIENTO']}, Número de Cañones: {$resultado['NRO_CANIONES']}</li>";
+                        foreach ($resultados_array1 as $resultado) {
+                            echo "<li> País:{$resultado['PAIS']}</li>";
                         }}
                         ?>
                 </div>
