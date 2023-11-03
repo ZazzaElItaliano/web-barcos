@@ -123,12 +123,12 @@ de los barcos que participaron en la batalla de Guadalcanal.</h1>
         </div>
         <div class="elemento">
         <div class="elementos"><img src="barcos3.jpg" alt="logo" width="310" height="300"></div>
-          <button type="button" class="btn btn-primary d-block mx-auto mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" class="btn btn-primary d-block mx-auto mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">
             Launch demo modal
           </button>
 
           
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -136,7 +136,19 @@ de los barcos que participaron en la batalla de Guadalcanal.</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
+                <ul>
+                        <?php
+                         require("consultas.php");
+                      
+                        if(empty($resultados_array2)){
+                          echo "Lo siento esta consulta esta vacía";
+                        }
+                        else{
+                        foreach ($resultados_array2 as $resultado) {
+                            echo "<li> Nombre de la batalla:{$resultado['NOMBRE_BATALLA']} <br> País: {$resultado['PAIS']}<br> Número de barcos: {$resultado['NUMERO_DE_BARCOS']}</li>";
+                        }}
+                        ?>
+                    </ul>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
